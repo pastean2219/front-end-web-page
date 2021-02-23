@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1969c0f2e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/home.css">
+    <title>Home</title>
+</head>
+
+<body onload="isAuthenticated(), cookieConsent(), setCurrentDate()">
+    <!-- Cookie Modal -->
+    <div id="cookieConsent" style="display:none">
+        This website is using cookies. <a href="#" target="_blank">More info</a>. <a class="cookieConsentOK"
+            onclick="cookieAccepted()">That's Fine</a>
+    </div>
+    <!-- navbar -->
+    <div id="authenticatedUser">
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <div class="dropdown" style="float: left;">
+                    <button class="dropbtn"><i class="fas fa-store-alt"></i> Products
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="products.html">Products Page</a>
+                        <a href="addproduct.html">Add Products</a>
+                    </div>
+                </div>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li>
+                    <p id="currentDateId" id="txt"></p>
+                </li>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fas fa-user-cog"></i> My Account
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="myprofile.html">My profile</a>
+                        <a href="#" onclick="logOut()">Log out</a>
+                    </div>
+                </div>
+                <li style="float:right"><a href="cart.html"><i class="fas fa-cart-plus"></i> My Cart</a></li>
+                <li style="float:right"><a href="contactpage.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="notAuthenticatedUser" style="display:none">
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <div class="dropdown" style="float: left;">
+                    <button class="dropbtn"><i class="fas fa-store-alt"></i> Products
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="products.html">Products Page</a>
+                    </div>
+                </div>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                <li>
+                    <p id="currentDateId" id="txt"></p>
+                </li>
+                <li style="float:right"><a href="cart.html"><i class="fas fa-cart-plus"></i> My Cart</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fas fa-user-cog"></i> My Account
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                        <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+                    </div>
+                </div>
+                <li style="float:right"><a href="contactpage.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="landing">
+        <div class="hometext">
+            <p>My Biggest worry is that when I'm dead and gone, my wife will sell my fishing gear for what I said I paid
+                for it.<i>"Koos Brandt"</i></p>
+
+            <p>One thing is certain though – when looking to buy fishing equipment and other related accessories, you
+                should always make sure you buy the quality.
+                Catching fish using high quality fishing tackle will definitely improve your fishing experience.
+            </p>
+        </div>
+        <h2 class="big-text">Get Hooked</h2>
+    </section>
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">It's Fish </span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">O' Clock</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Somewhere!</span>
+            </h1>
+        </div>
+    </div>
+    <div class="slider"></div>
+    <button class="open-button" onclick="openForm()">Stay in touch</button>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <h1>Today is your day</h1>
+
+            <label for="subscribeEmailid"><b>Email</b></label>
+            <input type="text" id="subscribeEmailid" placeholder="Enter Email" name="email" required>
+
+            <button type="submit" onclick="subscribeEmail()" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <small>&copy;2021 <strong>One last cast!?</strong>, All Rights Reserved</small>
+            <nav class="footer-nav">
+                <a href="termsofuse&privacy.html">Terms of Use</a>
+                <a href="termsofuse&privacy.html">Privacy</a>
+            </nav>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="../script/models/homeslider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="../script/models/user.js"></script>
+    <script src="../script/models/product.js"></script>
+    <script src="../script/services/commonService.js"></script>
+    <script src="../script/services/httpService.js"></script>
+    <script src="../script/main.js"></script>
+</body>
+
+</html>

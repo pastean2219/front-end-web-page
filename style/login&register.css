@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../img/barca-pescuit.jpg);
+  margin-top: 260px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1 {
+  margin: 20px;
+}
+
+/* forms for login and register */
+.form {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+.form input {
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  padding-top: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+.form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgb(31, 153, 86);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3 ease;
+  font-weight: 400;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: rgb(31, 153, 86);
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+/* login and register button */
+#registerbutton,
+#loginbutton {
+  margin-left: 30px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 200px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 18px;
+  border-radius: 7px;
+  background-color: #367334;
+}
+#registerbutton:hover {
+  background: #295922;
+}
+#loginbutton:hover {
+  background: #295922;
+}
+
+/* error and success message */
+.errorMessage {
+  color: red;
+}
+.successMessage {
+  color: green;
+}

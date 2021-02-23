@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/1969c0f2e0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../style/blogpost.css" />
+  <title>Blog post</title>
+</head>
+
+<body onload="getBlogPosts(), isAuthenticated()">
+  <div class="grid-container">
+    <div class="item1">
+      <div id="authenticatedUser">
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <div class="dropdown" style="float: left;">
+              <button class="dropbtn"><i class="fas fa-store-alt"></i> Products
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="products.html">Products Page</a>
+                <a href="addproduct.html">Add Products</a>
+              </div>
+            </div>
+            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                <i class="fas fa-user-cog"></i> My Account
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="myprofile.html">My profile</a>
+                <a href="#" onclick="logOut()">Log out</a>
+              </div>
+            </div>
+            <li style="float: right">
+              <a href="cart.html"><i class="fas fa-cart-plus"></i> My Cart</a>
+            </li>
+            <li style="float: right">
+              <a href="favorites.html"><i class="fab fa-gratipay"></i> Favorites</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="notAuthenticatedUser" style="display: none">
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+            <div class="dropdown" style="float: left;">
+              <button class="dropbtn"><i class="fas fa-store-alt"></i> Products
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="products.html">Products Page</a>
+              </div>
+            </div>
+            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+            <div class="dropdown">
+              <button class="dropbtn"><i class="fas fa-user-cog"></i> My Account
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+              </div>
+            </div>
+            <li style="float:right"><a href="contactpage.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="item2">
+      <p id="messagePanel"></p>
+      <h2>Recent posts!</h2>
+      <br /><br />
+      <div class="container">
+        <div class="row">
+          <h1>CARLIGE FEEDER-CUM LE ALEGEM</h1>
+          <br /><br />
+          <img src="../img/imagine1(carligefeeder).gif" height="400" width="100%" />
+          <br />
+          <h2>Alegerea unui carlig pentru method feeder</h2>
+          <p>
+            Cand spui carlig pentru method feeder, deschizi un intreg univers
+            de forme, marimi si greutati. Intotdeauna va exista o legatura
+            intre carlig, momeala si peste. Este ecuatia de baza in rezolvarea
+            bazelor acestui stil de pescuit. Nu poti alege un carlig avand in
+            vedere doar specia tinta. Sunt cazuri unde specia vizata raspunde
+            bine la mai multe tpuri de momeli. Anumite carlige pot fi sau nu (
+            dupa caz) pretabile unor momeli. Aici intervin date precum
+            greutatea sau forma carligului.
+          </p>
+          <img src="../img/imagine2(carlige feeder).jpg" height="400" width="100%" /><br />
+          <h2>
+            Alegerea carligului in functie de specia tinta si talia
+            exemplarelor
+          </h2>
+          <p>
+            A spune ca vei pescui la crap la method feeder este ca si cum ai
+            spune ca vei traversa strada. Nu este o informatie suficienta. Nu
+            traversezi strada pe oriunde si nici in orice conditii. Ai nevoie
+            sa gasesti un semafor, o trecere de pietoni, sa respecti culoarea
+            verde pentru pietoni si sa te mai uiti inca o data sa fi sigur ca
+            ajungi la destinatie si nu la Sf. Petru ( nu uita ca unii “
+            profesionisti “ trec pe rosu…). La fel este si cu un carlig pentru
+            method feeder.
+          </p>
+          <img src="../img/imagine3(carligefeeder).jpg" height="400" width="100%" /><br />
+          <p>
+            Daca am decis ca vom pescui la crap, trebuie sa investigam si la
+            ce dimensiune se regasesc in bazinul tinta. Media crapilor rezolva
+            o prima variabila a ecuatiei. Generalizand, carlige de feeder
+            cuprinse intre marimile 12 ( cel mai mic ) si 6 ( cel mai mare )
+            sunt suficiente. Daca media pestilor este 1.5 Kg ne restrangem
+            conul de selectie intre 10 si 8 ca marimi. Crapii de pana in 1.2
+            Kg merg in zona 12 si 10. Ce sare de 2 kg ca medie permite 6 si 8.
+            Garantat. Testat. Verificat.
+          </p>
+          <h2>Alegerea carligului in functie de momeala</h2>
+          <p>
+            Clasa de momeli pentru method feeder are doua mari ramuri : momeli
+            feeder de atractie si momeli feeder de nutritie. Pot fi sau nu
+            voluminoase. Diametrul momelilor este o componenta care asigura
+            selectia exemplarelor. Momelile de carlig mai mari ajuta pescarul
+            in selectia pe vad. Daca zona nadita este invadata de o populatie
+            mixta (ca dimensiuni) de pesti, atunci primul lucru la care
+            apelezi este marimea momelii de carlig. Firul de par este un alt
+            element ajutator. Nu este suficient sa te joci cu diametrul
+            momelii de carlig. Trebuie sa o departezi de carlig daca este
+            nevoie. Daca iti propui sa prinzi tot ce trage, atunci scurtezi
+            aceasta distanta.
+          </p>
+          <img src="../img/imagine4(carligefeeder).jpg" height="400" width="100%" /><br />
+          <h2>Alegerea carligului in functie de firul de legatura</h2>
+          <p>
+            Firul cu care legam un carlig pentru method feeder, trebuie sa fie
+            intr-o relatie echilibrata inclusiv cu momeala. La crap spre
+            exemplu, stim ca metoda de hranire are la baza aspiratia. Daca
+            apelam la momeli de atractie ( critic echilibrate, pop up ),
+            atunci ne orientam catre fire textile suple si usoare care sa
+            raspunda imediat la miscarile din apa.
+          </p>
+          <img src="../img/imagine5(carligefeeder).jpg" height="400" width="100%" /><br />
+          <p>
+            Daca crapii intra pe vad si vor incepe sa inspecteze zona, este
+            important ca la momentul intalnirii momelii de carlig, procesul de
+            aspiratie sa fie unul cat mai natural. Aceasta naturalete o
+            dobandim din calitatile firului cu care legam un carlig pentru
+            method feeder. Aici ne referim la suplete ( moale ), diametrul
+            redus si greutate diminuata.
+          </p>
+          <h2>Marimea unui carlig pentru method feeder</h2>
+          <p>
+            Marimea carligului este importanta. Asa cum am spus, va trebui
+            corelata atat cu momeala ca tipologie cat si cu talia pestilor sau
+            firul cu care vom lega acest auxiliar. Un carlig pentru method
+            feeder poate imbraca in functie de scenariu, multe “ forme “. Tija
+            mai scurta, cu sau fara barbeta, deschidere generoasa. Este si va
+            ramane cheia care deschide lacatul unei partide reusite.
+          </p>
+          <img src="../img/imagine6(carligefeeder).jpg" height="400" width="100%" /><br />
+          <p>
+            Fie ca discutam de selectie sau prezentari discrete, algoritmul
+            trebuie pastrat sau calibrat in functie de acesti parametrii.
+            Specia si talia, tipologia momelii si firul cu care vom lega
+            carligele.
+          </p>
+          <img src="../img/imagine7(carligefeeder).jpg" height="400" width="100%" /><br /><br />
+          <h2>Daca te intereseaza pescuitul la feeder, vezi si:</h2>
+          <br />,<br />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/UYWThxISotk" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="item3">
+      <h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+      <br />
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../img/slideshow 3.jpg" style="width:100%" height="300px">
+          <div class="text">Precision</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../img/slideshow 4.jpg" style="width:100%" height="300px">
+          <div class="text">Accessories</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../img/slideshow 5.jpg" style="width:100%" height="300px">
+          <div class="text">Matrix</div>
+        </div>
+      </div><br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <p>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+      <br />
+
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+      <br />
+      <img src="../img/blog sidebar.jpg" width="350" height="250" /><br />
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+    </div>
+    <div class="item4">
+      <div class="footer">
+        <div class="wrapper">
+          <small>&copy;2021 <strong>One last cast!?</strong>, All Rights
+            Reserved</small>
+          <nav class="footer-nav">
+            <a href="#">Back to Top</a>
+            <a href="termsofuse&privacy.html">Terms of Use</a>
+            <a href="termsofuse&privacy.html">Privacy</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../script/models/user.js"></script>
+  <script src="../script/services/commonService.js"></script>
+  <script src="../script/services/httpService.js"></script>
+  <script src="../script/main.js"></script>
+</body>
+
+</html>
